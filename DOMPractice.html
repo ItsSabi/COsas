@@ -55,10 +55,13 @@ p1.textContent = "ME TOO!";
 const div2 = document.createElement('div2');
 
 div2.setAttribute("style", 'background: pink;');
-div2.style.border = "2px black" ;
+//div2.style.border = "2px black" ;
+
+
 
 div2.appendChild(h1);
-div2.appendChild(p1);
+div2.append(p1);
+
 container.appendChild(div2);
 
 
