@@ -5,6 +5,9 @@
 
     <button id="btn">Click Me</button>
 
+    // the html file
+<button id="btn">Click Me Too</button>
+
 <script>
 
     //This only allows one button click per element
@@ -12,6 +15,14 @@
 
 var btn = document.querySelector('#btn');
 btn.onclick = () => alert("Hello World");
+
+
+// the JavaScript file
+var btn = document.querySelector('#btn');
+btn.addEventListener('click', () => {
+  alert("Hello World");
+});
+
 
 </script>
 
