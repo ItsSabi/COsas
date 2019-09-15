@@ -15,6 +15,9 @@
 <!-- Method 3-->
 <button id="btn">Click Me Too</button>
 
+<!--Alt version  using named function -->
+<button onclick="alertFunction()">CLICK ME BABY</button>
+
 <script>
 // Method 2
   var btn = document.querySelector('#btn');
@@ -28,7 +31,17 @@ btn.addEventListener('click', () => {
   alert("Hello World");
 });
 
+//Alt version below this line
+function alertFunction() {
+  alert("YAY! YOU DID IT!");
+}
 
+// METHOD 2
+btn.onclick = alertFunction;
+
+// METHOD 3
+btn.addEventListener('click', alertFunction);
+//end of using the alt version with named function 
 </script>
 
 
