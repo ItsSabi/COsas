@@ -2,23 +2,26 @@
 <html lang='en'>
     <meta charset="utf-8"/>
 
-
+  <!-- Method one of getting a button to work-->
    <!--  <button id="btn">Click Me</button>  -->
 
     // the html file
-<button id="btn">Click Me Too</button>
 
-  
+
+
+  <!-- METHOD 2-->
 <button onclick="alert('Hello World')">Click Me</button>
 
-
+<!-- Method 3-->
+<button id="btn">Click Me Too</button>
 
 <script>
-
+// Method 2
   var btn = document.querySelector('#btn');
 btn.onclick = () => alert("Hello World");
 
 
+// Method 3
 // the JavaScript file
 var btn = document.querySelector('#btn');
 btn.addEventListener('click', () => {
