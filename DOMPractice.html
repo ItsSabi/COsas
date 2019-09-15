@@ -26,42 +26,38 @@
 
 
 const container = document.querySelector('#container');
-
 const content = document.createElement('div');
-content.classList.add('content');
-content.textContent = 'This is the glorious text-content!';
+  content.classList.add('content');
+  content.textContent = 'This is the glorious text-content!';
 
 container.appendChild(content);
 
 const p = document.createElement('p');
-p.style.color ='red';
-
-p.textContent ="Hey I'm red!";
-container.appendChild(p);
+  p.style.color ='red';
+  p.textContent ="Hey I'm red!";
+  container.appendChild(p);
 
 const h3 = document.createElement('h3');
-h3.style.color = 'blue';
-h3.textContent = "I'm a blue h3";
+  h3.style.color = 'blue';
+  h3.textContent = "I'm a blue h3";
 
 container.appendChild(h3);
 
 
-const h1 = document.createElement('h1');
+//const h1 = document.createElement('h1');
 const hTest = document.createElement('hTest');
 const p1 = document.createElement('p1');
 const hpp = document.createElement("hpp");
 
-h1.textContent ="I'm in a div!";
+//h1.textContent ="I'm in a div!";
 p1.textContent = "ME TOO!";
 //hpp.textContent = "TEST";
-hTest.textContent = "I'm in a div!";
+hTest.textContent = "I'm in a div! ";
 
 const div2 = document.createElement('div2');
 
 div2.setAttribute("style", 'background: pink;');
 //div2.style.border = "2px black" ;
-
-
 
 //div2.append(h1);
 div2.append(hTest);
