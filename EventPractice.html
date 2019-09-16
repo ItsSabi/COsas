@@ -40,8 +40,12 @@ function alertFunction() {
 btn.onclick = alertFunction;
 
 // METHOD 3
-btn.addEventListener('click', alertFunction);
+//btn.addEventListener('click', alertFunction);
 //end of using the alt version with named function 
+
+btn.addEventListener('click', function(e){
+  console.log(e);
+})
 </script>
 
 
