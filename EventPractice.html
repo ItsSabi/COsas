@@ -45,8 +45,8 @@ btn.addEventListener('click', alertFunction);
 
 
 
-btn.addEventListener('click me!!!', function(e){
-  console.log(e);
+btn.addEventListener('click', function(e){
+  console.log(e.target.style.background='red');
 })
 </script>
 
